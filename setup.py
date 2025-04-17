@@ -27,6 +27,5 @@ author = "Piyush Singhal",
 author_email = "singhalpiyush3610@gmail.com",
 packages = find_packages(),
 install_packages = get_requirements('requirements.txt'),
-
 )
 
