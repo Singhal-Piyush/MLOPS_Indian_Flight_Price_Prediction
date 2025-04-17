@@ -18,9 +18,8 @@ def get_requirements(file_path:str) -> List[str]:
     return requirements
 
 
-
 setup(
-
+    
 name = "indian_flight_price_prediction",
 version = "0.0.1",
 author = "Piyush Singhal",
