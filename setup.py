@@ -21,7 +21,7 @@ def get_requirements(file_path:str) -> List[str]:
 
 setup(
 
-name = "Indian Flight Price Prediction",
+name = "indian_flight_price_prediction",
 version = "0.0.1",
 author = "Piyush Singhal",
 author_email = "singhalpiyush3610@gmail.com",
