@@ -10,7 +10,7 @@ In this project we will be predicting flight prices for Indian market which will
 4. Model Training
 5. Model Evaluation
 
-## Workflow
+## Workflow for Data Ingestion
 
 1. Update config.yaml
 2. Update schema.yaml
@@ -18,5 +18,5 @@ In this project we will be predicting flight prices for Indian market which will
 4. Update the entity
 5. Update the configuration manager in src config
 6. Update the components
-7. Update the pipeline
+7. Update the pipeline(Training and Batch Prediction Pipeline)
 8. Update the main.py
