@@ -15,10 +15,10 @@ Phase 1 of the project is to get the minimal viable MLOPS project ready. So will
 
 ## Workflow for Data Ingestion
 
-1. Update config.yaml
+1. Update config/config.yaml
 2. Update schema.yaml
 3. Update params.yaml
-4. Update the entity
+4. Update the src/entity/config_entity
 5. Update the configuration manager in src config
 6. Update the components
 7. Update the pipeline(Training and Batch Prediction Pipeline)
