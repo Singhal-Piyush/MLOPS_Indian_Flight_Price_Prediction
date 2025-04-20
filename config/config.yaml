@@ -4,11 +4,11 @@ artifacts_root : artifacts
 data_ingestion :
   root_dir : artifacts/data_ingestion
   # For adding the dataset using a URL
-  # source_URL : https://github.com/
+  # https://raw.githubusercontent.com/<username>/<repo>/<branch>/<path-to-file>
+  source_URL : https://raw.githubusercontent.com/Singhal-Piyush/Datasets/main/Indian_Flight_Price/dataset.zip
   # dataset link for this project
   #https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction
-  kaggle_dataset : shubhambathwal/flight-price-prediction
-
+  # kaggle_dataset : shubhambathwal/flight-price-prediction
   local_data_file : artifacts/data_ingestion/data.zip
   unzip_dir : artifacts/data_ingestion
   
