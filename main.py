@@ -1,5 +1,6 @@
 from src.indian_flight_price_prediction.logger import logger
 from src.indian_flight_price_prediction.pipeline.data_ingestion_pipeline import DataIngestionTrainingPipeline
+from src.indian_flight_price_prediction.pipeline.data_validation_pipeline import DataValidationTrainingPipeline
 
 STAGE_NAME = "Data Ingestion Stage"
 
@@ -13,4 +14,13 @@ except Exception as e:
     raise e
 
 
-logger.info("Logging test")
+STAGE_NAME = "Data Validation Stage"
+
+try:
+    logger.info(f">>>>>>>> stage {STAGE_NAME} started <<<<<<<<")
+    obj = DataValidationTrainingPipeline()
+    obj.initiate_data_validation()
+    logger.info(f">>>>>>>> stage {STAGE_NAME} completed <<<<<<<<")
+except Exception as e:
+    logger.exception(e)
+    raise e

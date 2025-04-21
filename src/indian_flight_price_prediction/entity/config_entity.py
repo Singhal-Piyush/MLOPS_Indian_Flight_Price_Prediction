@@ -5,6 +5,12 @@ from pathlib import Path
 class DataIngestionConfig:
     root_dir : Path
     source_URL : str
-    # kaggle_dataset : str
     local_data_file : Path
     unzip_dir : Path
+
+@dataclass
+class DataValidationConfig:
+    root_dir : Path
+    unzip_data_files : list[Path]
+    STATUS_FILE : str
+    all_schema : dict
