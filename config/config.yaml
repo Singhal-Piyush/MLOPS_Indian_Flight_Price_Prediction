@@ -17,6 +17,9 @@ data_ingestion :
 
 data_validation:
   root_dir : artifacts/data_validation
-  unzip_data_dir : artifacts/data_ingestion/economy.csv
+  # unzip_data_dir : artifacts/data_ingestion/economy.csv
+  unzip_data_files:
+    - artifacts/data_ingestion/economy.csv
+    - artifacts/data_ingestion/business.csv
   # check for multiple files validation
   STATUS_FILE : artifacts/data_validation/status.txt
