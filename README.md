@@ -28,6 +28,8 @@ Phase 1 of the project is to get the minimal viable MLOPS project ready. So will
 
 
 ## Workflow for Data Validation
+1. Update config/config.yaml
+2. Update schema.yaml
 
 
 ## Phase 2: Add AirFlow + MongoDB
