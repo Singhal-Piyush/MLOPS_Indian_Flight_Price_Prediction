@@ -27,5 +27,8 @@ Phase 1 of the project is to get the minimal viable MLOPS project ready. So will
 8. Update the main.py
 
 
+## Workflow for Data Validation
+
+
 ## Phase 2: Add AirFlow + MongoDB
 In Phase 2 we will be adding the functionality to load the data from API using Airflow and store it in MongoDB automatically. 

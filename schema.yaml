@@ -1,1 +1,15 @@
-key : value
+COLUMNS:
+  date : object
+  airline : object
+  ch_code : object
+  num_code : int64 
+  dep_time : object
+  from : object
+  time_taken : object
+  stop : object
+  arr_time : object
+  to : object
+  price : object
+
+TARGET_COLUMN:
+  name : price
