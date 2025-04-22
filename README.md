@@ -11,11 +11,11 @@ Phase 1 of the project is to get the minimal viable MLOPS project ready. So will
 
 1. Data Ingestion
 2. Data Validation
-3. Data Transformation
+3. Data Transformation -> Feature Engineering, Data Preprocessing
 4. Model Training
 5. Model Evaluation
 
-## Workflow for Data Ingestion
+## Workflow for each steps above 
 
 1. Update config/config.yaml
 2. Update schema.yaml
@@ -27,9 +27,6 @@ Phase 1 of the project is to get the minimal viable MLOPS project ready. So will
 8. Update the main.py
 
 
-## Workflow for Data Validation
-1. Update config/config.yaml
-2. Update schema.yaml
 
 
 ## Phase 2: Add AirFlow + MongoDB

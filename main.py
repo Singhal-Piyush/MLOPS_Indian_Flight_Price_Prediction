@@ -20,7 +20,7 @@ try:
     logger.info(f">>>>>>>> stage {STAGE_NAME} started <<<<<<<<")
     obj = DataValidationTrainingPipeline()
     obj.initiate_data_validation()
-    logger.info(f">>>>>>>> stage {STAGE_NAME} completed <<<<<<<<")
+    logger.info(f">>>>>>>> stage {STAGE_NAME} completed >>>>>>>>\nx=============x")
 except Exception as e:
     logger.exception(e)
     raise e
