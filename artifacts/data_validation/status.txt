@@ -1,6 +1,6 @@
 
 ===========================
-Validation Timestamp: 2025-04-21 22:13:02
+Validation Timestamp: 2025-04-22 16:47:00
 ===========================
 
 ===========================
@@ -32,3 +32,42 @@ Column: stop          | Expected: object  | Found: object  | Match
 Column: arr_time      | Expected: object  | Found: object  | Match 
 Column: to            | Expected: object  | Found: object  | Match 
 Column: price         | Expected: object  | Found: object  | Match 
+
+----------------------------------------
+Validation Status: True
+===========================
+Validation Timestamp: 2025-04-22 18:00:50
+===========================
+
+===========================
+Validation Report: economy.csv
+===========================
+Column: date          | Expected: object  | Found: object  | Match 
+Column: airline       | Expected: object  | Found: object  | Match 
+Column: ch_code       | Expected: object  | Found: object  | Match 
+Column: num_code      | Expected: int64   | Found: int64   | Match 
+Column: dep_time      | Expected: object  | Found: object  | Match 
+Column: from          | Expected: object  | Found: object  | Match 
+Column: time_taken    | Expected: object  | Found: object  | Match 
+Column: stop          | Expected: object  | Found: object  | Match 
+Column: arr_time      | Expected: object  | Found: object  | Match 
+Column: to            | Expected: object  | Found: object  | Match 
+Column: price         | Expected: object  | Found: object  | Match 
+
+===========================
+Validation Report: business.csv
+===========================
+Column: date          | Expected: object  | Found: object  | Match 
+Column: airline       | Expected: object  | Found: object  | Match 
+Column: ch_code       | Expected: object  | Found: object  | Match 
+Column: num_code      | Expected: int64   | Found: int64   | Match 
+Column: dep_time      | Expected: object  | Found: object  | Match 
+Column: from          | Expected: object  | Found: object  | Match 
+Column: time_taken    | Expected: object  | Found: object  | Match 
+Column: stop          | Expected: object  | Found: object  | Match 
+Column: arr_time      | Expected: object  | Found: object  | Match 
+Column: to            | Expected: object  | Found: object  | Match 
+Column: price         | Expected: object  | Found: object  | Match 
+
+----------------------------------------
+Validation Status: True

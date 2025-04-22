@@ -12,8 +12,8 @@ class DataValidation:
 
     def validate_all_columns(self) ->bool:
         try:
-            validation_status = None
             all_schema = self.config.all_schema.keys()
+            column_validation_status = []
 
             with open(self.config.STATUS_FILE, 'a') as f:
                 current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -28,17 +28,22 @@ class DataValidation:
                     f.write(f"{'='*27}\n")
                     for col in all_cols:
                         if col not in all_schema:
-                            validation_status = False
-                            f.write(f"Column {col} not found in schema.Validation Status : {validation_status}.\n")
+                            is_valid = False
+                            f.write(f"Column {col} not found in schema.Validation Status : {is_valid}.\n")
                         else:
                             if data[col].dtype == self.config.all_schema[col]:
-                                validation_status = True
+                                is_valid = True
                                 expected_dtype = str(self.config.all_schema[col])
                                 actual_dtype = str(data[col].dtype)
                                 f.write(f"Column: {col:<13} | Expected: {expected_dtype:<7} | Found: {actual_dtype:<7} | Match \n")
                             else:
-                                validation_status = False
+                                is_valid = False
                                 f.write(f"Column: {col:<13} | Expected: {expected_dtype:<7} | Found: {actual_dtype:<7} | Mis-match \n")
+                        column_validation_status.append(is_valid)
+                
+                validation_status = all(column_validation_status)
+                f.write(f"\n{'-'*40}\n")
+                f.write(f"Validation Status: {validation_status}")
 
             return validation_status
         
